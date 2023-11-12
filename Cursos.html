@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Sua Empresa</title>
+    <link rel="stylesheet" href="estilodoscursos.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        /* Adicione seu CSS personalizado aqui, se necessário */
+        /* Reset de estilos padrão */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li,
+        a {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos gerais */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #212121;
+            color: #fff;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        header nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Estilos da seção de cursos */
+        .cursos {
+            padding: 40px;
+        }
+
+        .curso {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            header nav ul {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .cursos {
+                padding: 20px;
+            }
+
+            .curso {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" style="background-color: #212121;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="Fotos/logo.png" alt="Logo" width="300">
+            </div>
+            <div id="topicos">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li id="cursos"><a href="Cursos.html" class="nav-link">Cursos</a>
+                            <ul class="subtopicos">
+                                <li>Introdução à finanças</li>
+                                <li>Dicas para orçamento</li>
+                                <li>Como lidar com dívidas</li>
+                                <li>Como economizar dinheiro</li>
+                                <li>Como investir</li>
+                                <li>Como criar um plano financeiro</li>
+                            </ul>
+                        </li>
+                        <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                        <li><a href="#precos" class="nav-link">Preços</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cursos">
+            <div class="container">
+                <h1>Nossos Cursos Disponíveis</h1>
+                <article class="curso">
+                    <h2>Introdução à Finanças</h2>
+                    <p>Este curso introdutório aborda os conceitos básicos de finanças pessoais e investimentos.</p>
+                    <a href="introducao-financas.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Dicas para Orçamento</h2>
+                    <p>Descubra como criar um orçamento eficaz e gerenciar suas despesas com nosso curso de dicas de orçamento.</p>
+                    <a href="dicas-orcamento.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Lidar com Dívidas</h2>
+                    <p>Aprenda estratégias para lidar com dívidas e criar um plano para se livrar delas.</p>
+                    <a href="lidar-dividas.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Economizar Dinheiro</h2>
+                    <p>Descubra dicas e truques para economizar dinheiro e aumentar sua poupança.</p>
+                    <a href="economizar-dinheiro.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Investir</h2>
+                    <p>Aprenda os princípios de investimento e como criar um portfólio de investimento diversificado.</p>
+                    <a href="como-investir.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Criar um Plano Financeiro</h2>
+                    <p>Saiba como criar um plano financeiro sólido para atingir seus objetivos financeiros de longo prazo.</p>
+                    <a href="plano-financeiro.html">Saiba mais</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const saibaMaisLinks = document.querySelectorAll(".curso a");
+
+            saibaMaisLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    // Eventualmente, você pode redirecionar o usuário para a página do curso em vez de exibir um alerta
+                    event.preventDefault();
+                    alert("Você clicou em 'Saiba mais'. Implemente a ação desejada aqui.");
+                });
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            var cursosNavItem = document.getElementById("cursos");
+            var subtopicos = cursosNavItem.querySelector(".subtopicos");
+
+            cursosNavItem.addEventListener("mouseover", function () {
+                subtopicos.style.display = "block";
+            });
+
+            cursosNavItem.addEventListener("mouseout", function () {
+                subtopicos.style.display = "none";
+            });
+        });
+    </script>
+</body>
+
+</html>

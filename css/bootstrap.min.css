@@ -1,0 +1,281 @@
+/* Reset de estilos e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Estilos do Cabeçalho */
+#header {
+    background-color: #212121;
+    color: #fff;
+    border-bottom: 2px solid #0f5f96;
+    padding: 15px 0;
+}
+
+.logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #0f5f96;
+}
+
+.subtopicos {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar #cursos:hover .subtopicos {
+    display: block;
+}
+
+
+#topicos #cursos:hover .subtopicos {
+    display: block;
+}
+
+/* Estilos da Seção Home */
+#home {
+    background-color: #212121;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+#home .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#home .col-md-6 {
+    flex: 1;
+    padding: 20px;
+}
+
+#home img {
+    max-width: 100%;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #e6e6e6;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.form-control {
+    border: 2px solid #0f5f96;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #0f5f96;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-primary:hover {
+    background-color: #137dc5;
+}
+
+/* Estilos das Seções de Conteúdo */
+.caixa {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.caixa img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.caixa h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #212121;
+    margin: 20px 0;
+}
+
+.caixa .btn-primary {
+    background-color: #0f5f96;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 0;
+}
+
+.caixa .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.caixa .card {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    position: relative;
+}
+
+.caixa .card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: #0f5f96;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.caixa .card:hover::after {
+    opacity: 1;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0f5f96;
+}
+
+/* Estilos dos Ícones de Mídia Social no Rodapé */
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0f5f96;
+    transform: scale(1.2);
+}
+
+/* Estilos para o botão "Voltar ao Topo" */
+.btn-voltar-ao-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #0f5f96;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-voltar-ao-topo:hover {
+    background-color: #137dc5;
+}
+
+/* Estilos para o ícone do menu "hamburguer" (esses estilos são para dispositivos móveis) */
+@media (max-width: 768px) {
+    .navbar-toggler-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 5px;
+        color: #fff;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #212121;
+        width: 100%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #topicos #cursos:hover .subtopicos {
+        display: block;
+    }
+}
